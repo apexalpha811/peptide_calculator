@@ -13,6 +13,7 @@
   width: 100%;
   max-width: 400px;
   position: relative;
+  transform: translateX(-10%);
 }
 
 /* The Needle */
