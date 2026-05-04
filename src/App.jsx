@@ -25,10 +25,10 @@ function App() {
       // 100 U/mL syringe assumption
       const units = volumeMl * 100;
 
-      setResultMl(volumeMl.toFixed(2));
+      setResultMl(volumeMl.toFixed(3));
       setResultUnits(Math.round(units).toString());
     } else {
-      setResultMl('0.00');
+      setResultMl('0.000');
       setResultUnits('0');
     }
   }, [vialMg, waterMl, doseMg]);
