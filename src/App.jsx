@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Syringe, Droplets, Info, Beaker, CheckCircle2 } from 'lucide-react';
+import SyringeVisualizer from './SyringeVisualizer';
 import './index.css';
 
 function App() {
@@ -105,9 +106,11 @@ function App() {
               <div className="result-value">{resultMl}</div>
               <div className="result-subtext">milliliters (mL)</div>
               
-              <div className="result-units">
+              <div className="result-units" style={{marginBottom: '2rem'}}>
                 ~{resultUnits} IU (Units on U-100 Syringe)
               </div>
+
+              <SyringeVisualizer volumeMl={resultMl} />
             </div>
           </div>
 
