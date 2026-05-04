@@ -26,7 +26,7 @@ const SyringeVisualizer = ({ volumeMl }) => {
               className="dose-marker"
               style={{ left: `${fillPercentage}%` }}
             >
-              {units} IU
+              {safeVolume.toFixed(3)} mL
             </div>
           )}
 
@@ -51,7 +51,7 @@ const SyringeVisualizer = ({ volumeMl }) => {
                 style={{ left: `${tick}%`, position: 'absolute' }}
               >
                 {tick % 50 === 0 && tick > 0 && (
-                  <div className="tick-label">{tick}</div>
+                  <div className="tick-label">{(tick / 100).toFixed(1)}</div>
                 )}
               </div>
             ))}

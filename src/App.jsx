@@ -107,7 +107,7 @@ function App() {
               <div className="result-subtext">milliliters (mL)</div>
               
               <div className="result-units" style={{marginBottom: '2rem'}}>
-                ~{resultUnits} IU (Units on U-100 Syringe)
+                Standard 1mL / 1cc Syringe
               </div>
 
               <SyringeVisualizer volumeMl={resultMl} />
